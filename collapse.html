@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Collapse doc</title>
+    <style>
+        .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Width of the toggle */
+    height: 34px; /* Height of the toggle */
+}
+
+.switch input {
+    opacity: 0; /* Hide the default checkbox */
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+body.dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .card.dark-mode {
+        background-color: rgb(50, 50, 50);
+        color: white;
+        border: 1px solid white;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="container mt-3">
+        <h1>Course Content</h1>
+        <p>44 sections • 373 lectures • 61h 44m total length
+        </p>
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                    <table>
+                        <tr>
+                        <td style="width: 80%; "><a class="btn fw-bold" data-bs-toggle="collapse" href="#c1">Front-End Web Development</a></td>
+                        <td style="width: 10%;"><p class="mt-2">9 lectures • 37min</p></td>
+                        </tr>
+                    </table>
+                    </div>
+
+
+                </div>
+                <div id="c1" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#"> What You'll Get in This Course</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>03:08</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#"> Download the Course Syllabus</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>00:12</td>
+                        </tr>
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-file-earmark"></i></span>Download the 12 Rules to Learn to Code eBook[Latest Edition]</td>
+                            <td></td>
+                            <td>00:42</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-file-earmark"></i></span>Download the Required Software</td>
+                            <td></td>
+                            <td>00:43</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#">How Does the internet Actually Work?</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>05:27</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#">How Do Website Actually Work?</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>08:22</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#">How to Get the Most Out of the Course</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>09:33</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#">How to Get Help When You're Stuck</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>09:33</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-file-earmark"></i></span>Pathfinder</td>
+                            <td></td>
+                            <td>00:43</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+
+
+          <!-- collapse 2 ----------------------------------------- -->
+
+
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                    <table>
+                        <tr>
+                        <td style="width: 80%; "><a class="btn fw-bold" data-bs-toggle="collapse" href="#c2">Introduction to HTML</a></td>
+                        <td style="width: 10%;"><p class="mt-2">8 lectures • 49min</p></td>
+                        </tr>
+                    </table>
+                    </div>
+
+
+                </div>
+                <div id="c2" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-file-earmark"></i></span><a href="#">A Note About 2023 Course Update</a></td>
+                            <td style="width: 10%;"><a href="#">Preview</a> </td>
+                            <td>00:36</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span><a href="#">What is HTML?</a></td>
+                            <td style="width: 10%;"> <a href="#">Preview</a> </td>
+                            <td>04:18</td>
+                        </tr>
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-youtube"></i></span>How to Download the Course Resources</td>
+                            <td></td>
+                            <td>02:43</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-youtube"></i></span>HTML Heading Elements</td>
+                            <td></td>
+                            <td>14:24</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>HTML Paragraph Elements</td>
+                            <td></td>
+                            <td>08:40</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>Self Closing Tags</td>
+                            <td></td>
+                            <td>11:40</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>[Project] Movie Ranking</td>
+                            <td></td>
+                            <td>05:43</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-youtube"></i></span>How to Ace this Course</td>
+                            <td></td>
+                            <td>01:24</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+
+
+                <!-- collapse 3 ----------------------------------------- -->
+
+
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                    <table>
+                        <tr>
+                        <td style="width: 80%; "><a class="btn fw-bold" data-bs-toggle="collapse" href="#c3">Intermediate HTML</a></td>
+                        <td style="width: 10%;"><p class="mt-2">7 lectures • 52min</p></td>
+                        </tr>
+                    </table>
+                    </div>
+
+
+                </div>
+                <div id="c3" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>The List Element</td>
+                            <td style="width: 10%;"></td>
+                            <td>10:36</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>Nesting and Indentation</td>
+                            <td></td>
+                            <td>14:18</td>
+                        </tr>
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-youtube"></i></span>Anchor Elements
+                            </td>
+                            <td></td>
+                            <td>10:43</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-youtube"></i></span>Image Elements</td>
+                            <td></td>
+                            <td>08:17</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>[Project] Birthday Invite
+                            </td>
+                            <td></td>
+                            <td>04:01</td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 90%;"><span class="me-2"><i class="bi bi-youtube"></i></span>Tip from Angela - Habit Building with the Calendar Trick</td>
+                            <td></td>
+                            <td>02:52</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="me-2"><i class="bi bi-youtube"></i></span>Get Access to the Monthly App Brewery Newsletter</td>
+                            <td></td>
+                            <td>00:56</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- toggel button---------------------------------------- -->
+
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+    </label>
+
+
+    <script>
+        const toggle = document.querySelector('.switch input');
+        const body = document.body;
+
+        toggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    
+</body>
+</html>

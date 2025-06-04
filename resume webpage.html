@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Resume Webpage</title>
+    <style>
+        body{
+            background-color: rgb(237, 236, 236);
+        }
+        .main{
+            width: 50%;
+            border-radius: 5px;
+            background-color: white;
+            margin-left: 25%;
+            margin-top: 10px;
+        }
+
+            /* toggel button  --------------------------------------- */
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .card.dark-mode {
+            background-color: rgb(50, 50, 50);
+            color: white;
+            border: 1px solid white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container bg-primary p-4 text-white">
+            <div>
+                <div class="row">
+                    <img src="girls 01.jpg" class="img-thumbnail" style="height: 150px; width: 150px;" >
+
+                    <div class="col ms-5">
+                        <h3 class="">Joyce Harrison</h3>
+                        <p class="mt-3" style="font-size: 11.5px;">Graphic Designer & Web Designer</p>
+                        <div class="col mt-3">    
+                            <button type="button" class="badge rounded-pill bg-light" style="color: black; padding: 8px 15px; border: none; font-weight: lighter;">Download CV</button>
+                            <button type="button" class="badge rounded-pill bg-success" style="padding: 8px 15px; border: none; font-weight: lighter;">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>
+    
+
+        <div class="row p-4">
+            <div class="col">
+                <h3 class="">About Me</h3>
+                <p class="" style="font-size: 15px;">Lorem ipsum dolor consectetur adipisicing elit.<br/>illum aut ullam error esse eveniet recusandae<br/>vel odit maxime blanditiis hic sed laborum.</p>
+            </div>
+            
+            <div class="col-md-6 p-4" style="font-size: 15px;">
+                <span>Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</span><br>
+                <span>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;joyce@company.com</span><br>
+                <span>Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 45618 94278</span><br>
+                <span>Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;140, Parvat Patiya, Surat.</span>
+            </div>
+        </div>
+        
+        <div class="" style="border: 1px solid rgb(186, 184, 184);"></div>
+
+        <div class="row p-4">
+            <h4>Professional Skills</h4>
+            <div class="col">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+
+                <p>Java Script</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+            </div>
+
+                <div class="col">
+                    <p>Photoshop</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+    
+                    <p>Illustrator</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+    
+                    <p>Figma</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="" style="border: 1px solid rgb(186, 184, 184);"></div>
+            
+        </div>
+    </div>
+
+    
+
+
+
+
+    <div class="modal" id="mypage" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">WELCOME</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">This is a Web Page...</div>
+
+                <div class="modal-footer">
+                    <button type="button" id="submit" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="position-fixed bottom-0 p-3">
+        <div class="toast me-auto align-items-center text-bg-success border-0" id="mytoast">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Modal submitted Successfuly
+                </div>
+                <!-- <button type="button" class="btn btn-close p-3" data-bs-dismiss="toast"></button> -->
+            </div>
+        </div>
+    </div>
+
+
+            <!-- toggel button---------------------------------------- -->
+
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+    </label>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = new bootstrap.Modal(document.getElementById("mypage"));
+            // modal.show();
+
+            setTimeout(() =>{
+                modal.show();
+            },5000)
+            const submitButton = document.getElementById("submit");
+            submitButton.addEventListener('click', () => {
+                modal.hide();
+                const toast = new bootstrap.Toast(document.getElementById('mytoast'));
+                toast.show();
+            });
+        });
+
+            // toggle button ------------------------
+
+            const toggle = document.getElementById('themeToggle');
+            const body = document.body;
+            // const cards = document.querySelectorAll('');
+        
+            toggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+            cards.forEach(card => {
+                card.classList.toggle('dark-mode');
+            });
+            });
+
+
+
+    </script>
+    
+    
+</body>
+</html>
