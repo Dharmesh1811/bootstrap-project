@@ -136,7 +136,7 @@
       } */
 
     /* dark button ---------------------------------  */
-  .dark-mode .navbar{
+  /* .dark-mode .navbar{
     background-color: #1a1a1a;
   }
   .dark-mode #navbar ul li a{
@@ -220,7 +220,7 @@
     }
     #srcbtn i {
       color: #292929;
-    }
+    } */
 
     #theme-icon {
       color: #292929;
@@ -231,6 +231,7 @@
       position: absolute;
       top: 20px;
       right: 220px;
+      color: #292929;
     }
 
        /* search button -------------------------------------- */
